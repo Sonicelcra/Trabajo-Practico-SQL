@@ -1,0 +1,18 @@
+Create Table Autores (
+  Nombre VARCHAR(100) NOT NULL,
+  Nacionalidad VARCHAR(100) NOT NULL,
+  ID INT(100)
+);
+
+Create Table Libros (
+  Titulo VARCHAR(100) NOT NULL,
+  Genéro VARCHAR(100) NOT NULL,
+  Autor VARCHAR(100) NOT NULL,
+  'Autor ID' INT(100)
+);
+
+INSERT INTO Autores 
+VALUES ('Hernando Garcia', 'Venezuelo', 1), ('Manuel Necio', 'Colombiano', 2), ('Franciano Pololo', 'Italiano', 3), ('Martinez Rombolo', 'Africano', 4), ('Marie Curie', 'Polaca', 5);
+
+INSERT INTO Libros
+VALUES ('Las Vidas Perdidas', 'Historia', 'Hernando Garcia', 1), ('Luz Del Pasado', 'Ficcion', 'Manuel Necio', 2), ('El Mar Calido', 'Romance', 'Franciano Pololo', 3), ('Abrazos Durante La Noche', 'Romance', 'Franciano Pololo', 3), ('Tratados de Paz', 'Historia', 'Martinez Rombolo', 4), ('Traité de radioactivité', 'Fisíca', 'Marie Curie', 5);
