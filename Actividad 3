@@ -1,0 +1,23 @@
+create table Estudiantes (
+  Nombre VARCHAR(100) NOT NULL,
+  'Fecha de Nacimiento' INT(100) NOT NULL
+  );
+Create Table Materias (
+  Nombre VARCHAR(100) NOT NULL,
+  'Año' INT(100) NOT NULL
+  );  
+Create Table Inscripciones (
+  'Nombre de Estudiante' VARCHAR(100) NOT NULL,
+  'Nombre de Materia' VARCHAR(100) NOT NULL,
+  'Fecha de Inscripcion' INT(100) NOT NULL
+);
+
+Insert into Estudiantes
+Values ('Manuel', '10/2/2006'), ('Fernando', '11/2/2006'), ('Christian', '1/10/2007'), ('Pablo', '6/7/2007'), ('Juan', '10/12/2010')
+
+Insert into Materias
+Values ('Matematíca', 'Primer Año'), ('Lengua', 'Primer Año'), ('Literatura', 'Primer Año'), ('Quimíca', '5to Año'), ('Fisíca', '5to Año')
+
+Insert into Incripciones
+Values ('Manuel', 'Matemática', '12/7/2011'), ('Fernando', 'Lengua', '11/6/2011'), ('Christian', 'Literatura', '12/5/2012'), 
+('Pablo', 'Literatura', '18/10/2012'), ('Juan', 'Fisíca', '10/10/2025')
