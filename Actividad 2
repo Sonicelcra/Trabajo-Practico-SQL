@@ -1,0 +1,23 @@
+Create Table Compradores (
+    Nombre VARCHAR(100) NOT NULL,
+    'Cantidad de Compras' INT(100) NOT NULL,
+    'ID Comprador' INT(100) NOT NULL
+   );
+  
+  Create Table Ordenes (
+    'Producto(s)' VARCHAR(100) NOT NULL,
+    Cantidad INT(100) NOT NULL,
+    'Precio Actual' INT(100) NOT NULL,
+    'Fecha en que se ordeno' VARCHAR(100) NOT NULL,
+    'ID Producto' INT(100) NOT NULL,
+    'ID Comprador' INT(100) NOT NULL
+   );
+
+INSERT INTO Compradores
+  Values('Ronaldo', 10, 2349), ('Mariano', 1, 2512), ('Perru', 124, 1253), ('Christian', 5, 8395), ('Tutu', 100, 6234)
+
+INSERT INTO Ordenes
+  Values('Libros', 10, 250, '12 de abril', 6349, 2349), ('Estanteria', 1, 1670, '13 de marzo', 9185, 2512), 
+  ('Leche', 124, 1240, '29 de Diciembre', 6149, 1253), ('Lapices', 5, 20, '30 de Febrero', 5792, 8395), ('Dulces', 100, 1000, '1 de Enero', 3489, 6234)
+
+
